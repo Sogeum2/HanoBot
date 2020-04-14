@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 
 from selenium import webdriver
@@ -47,5 +48,5 @@ async def on_message(message):
                         print('x')
 
         await message.channel.send("\n".join(temp))
-
-client.run('NjkxNDY3NDkxMTQ2MjAzMTc3.XoLwhg.k94zeGQ7LRfMEQC1GrYmBr_du2U')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
