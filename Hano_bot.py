@@ -29,7 +29,8 @@ async def on_message(message):
     global driver
     global driver_options
     global arche_point
-
+    if message.content.startswith('?test'):
+        await message.channel.send("test")
     if message.content.startswith('?채권'):
         temp = []
         for x in range(1, 5):
