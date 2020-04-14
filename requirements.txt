@@ -1,2 +1,2 @@
 discord.py==1.3.3
-selenium.py==3.9.0
+selenium.py==3.0.1
