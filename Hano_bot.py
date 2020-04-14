@@ -1,6 +1,5 @@
 import discord
 import os
-import asyncio
 
 from selenium import webdriver
 
