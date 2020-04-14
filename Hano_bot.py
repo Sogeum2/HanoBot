@@ -10,7 +10,7 @@ driver_options.add_argument('headless')
 driver_options.add_argument('--disable-gpu')
 driver_options.add_argument('lang=ko_KR')
 
-driver = webdriver.Chrome('chromedriver.exe', chrome_options=driver_options)
+driver = webdriver.Chrome('/app/.chromedriver/bin/chromedriver.exe', chrome_options=driver_options)
 driver.get('https://archeage.xlgames.com/play/worldinfo/EANNA/');
 
 arche_point = "20개"
