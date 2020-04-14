@@ -6,12 +6,12 @@ from selenium import webdriver
 client = discord.Client()
 
 driver_options = webdriver.ChromeOptions()
-driver_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+driver_options.binary_location = os.environ["GOOGLE_CHROME_BIN"]
 driver_options.add_argument('headless')
 driver_options.add_argument('--disable-gpu')
 driver_options.add_argument('lang=ko_KR')
 
-driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=driver_options)
+driver = webdriver.Chrome(executable_path=os.environ["CHROMEDRIVER_PATH"], chrome_options=driver_options)
 driver.get('https://archeage.xlgames.com/play/worldinfo/EANNA/');
 
 arche_point = "20개"
